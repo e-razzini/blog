@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;   
+    padding: 10px;
+}
+
+/*h1,h2,h3{
+    color: #f0307d;
+}
+*/
+.header{
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    background-image: url('https://digitalblasphemy.com/graphics/fb/sakura2k13night1fb.jpg');
+    background-size: cover;
+   /* position: fixed;*/
+    width: 100%;
+    top: 0px;
+    left: -10px;
+    height: 240px;
+}
+
+.header p{
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.40);
+}
+
+.header h1{
+    font-size: 30px;
+    color: #fff;
+}
+
+.nav-bar{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #ccc;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    cursor: pointer;
+}   
+
+.nav-bar a:hover{
+    background: #f0307d;
+    background: linear-gradient(90deg, rgba(240,48,125,1) 0%, rgba(240,48,149,1) 35%, rgba(240,48,160,1) 100%);
+    color: #fff;
+}
+
+
+.nav-bar .alinha-direita{
+    float: right;
+    right: 0px;
+}
+
+.leftcol{
+    float: left;
+    width: 75%;
+    padding: 5px;
+}
+
+.card{
+    background: white;
+    padding: 10px;
+    border-radius: 2px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.card,.nav-bar,.header,.footer{
+    box-shadow: -2px 1px 2px rgba(0,0,0,.10);
+}
+
+.fakeimg{
+    background-size: cover;           
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:800px){
+    .leftcol, .rightcol{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 200px){
+    .nav-bar a{
+        width: 100%;
+        display: block; 
+    }
+}
+
+.rightcol{
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.footer{
+    width: 100%;
+    float: left;
+    background-color:#333;
+    color: #fff !important;
+    padding: 10px;
+    margin-top:20px; 
+    text-align: center;
+    margin-bottom:5px ;
+}
+
+.footer h2{
+    color: #fff;
+}
