@@ -1,125 +1,152 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Ubuntu', sans-serif;   
+body {
+    font-family: 'Ubuntu', sans-serif;
     padding: 10px;
+    background-color: #8989bd;
 }
 
-/*h1,h2,h3{
-    color: #f0307d;
-}
-*/
-.header{
-    background-color: #fff;
+.header {
+    background-color: #79689f;
     text-align: center;
     padding: 30px;
-    background-image: url('https://digitalblasphemy.com/graphics/fb/sakura2k13night1fb.jpg');
-    background-size: cover;
-   /* position: fixed;*/
+    background-image: url('https://www.turismonovaledoitajai.com.br/wp-content/uploads/2018/03/bombinhas-praias-em-santa-catarina.jpg');
+    height: 300px;
     width: 100%;
-    top: 0px;
-    left: -10px;
-    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.header p{
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.40);
+.header p, h1 {
+    color: #000000;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 }
 
-.header h1{
+.header h1 {
     font-size: 30px;
-    color: #fff;
+    color: #000000;
 }
 
-.nav-bar{
+.nav-bar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #79689f;
 }
 
-.nav-bar a{
+.nav-bar a {
     text-decoration: none;
     color: #ccc;
     float: left;
     text-align: center;
     padding: 14px 16px;
     cursor: pointer;
-}   
+    width: auto;
+    overflow: hidden;
+}
 
-.nav-bar a:hover{
-    background: #f0307d;
-    background: linear-gradient(90deg, rgba(240,48,125,1) 0%, rgba(240,48,149,1) 35%, rgba(240,48,160,1) 100%);
+.nav-bar a:hover {
+    background-color: #403e7d;
     color: #fff;
 }
 
-
-.nav-bar .alinha-direita{
+.nav-bar .alinha-direita {
     float: right;
     right: 0px;
 }
 
-.leftcol{
+.leftcol {
     float: left;
     width: 75%;
     padding: 5px;
 }
 
-.card{
-    background: white;
+.card {
+    background-color: #908cbe;
     padding: 10px;
     border-radius: 2px;
     transition: 0.4s;
     cursor: pointer;
 }
 
-
-.card,.nav-bar,.header,.footer{
-    box-shadow: -2px 1px 2px rgba(0,0,0,.10);
+.card h2 {
+    color: #fff;
 }
 
-.fakeimg{
-    background-size: cover;           
+.fakeimg {
+    background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
-.row::after{
-    content:"";
+
+.row::after {
+    content: "";
     display: table;
     clear: both;
 }
-@media screen and (max-width:800px){
-    .leftcol, .rightcol{
+
+@media screen and (max-width:800px) {
+    .leftcol, .rightcol {
         width: 100%;
         padding: 0px;
     }
 }
 
-@media screen and (max-width: 200px){
-    .nav-bar a{
+@media screen and (max-width: 200px) {
+    .nav-bar a {
         width: 100%;
-        display: block; 
+        display: block;
     }
 }
 
-.rightcol{
+.rightcol {
     float: left;
     width: 25%;
     padding: 5px;
 }
 
-.footer{
+.footer {
     width: 100%;
     float: left;
-    background-color:#333;
+    background-color: #79689f;
     color: #fff !important;
     padding: 10px;
-    margin-top:20px; 
+    margin-top: 20px;
     text-align: center;
-    margin-bottom:5px ;
+    margin-bottom: 5px;
 }
 
-.footer h2{
+.footer h2 {
     color: #fff;
+}
+
+.card i {
+    padding: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.card h3 {
+    color: #fff;
+}
+
+.card .imgpost {
+    margin-top: 10px;
+}
+
+.card a {
+    margin: 20px;
+}
+
+.galeria img {
+    position: relative;
+    left: -20px;
+    margin-top: 10px;
+    border: 1px solid #8989bd;
+}
+
+.galeria h2 {
+    text-align: center;
 }
